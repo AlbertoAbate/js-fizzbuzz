@@ -4,15 +4,19 @@
 
 // stampare i numeri da 1 a 100
 for (var i = 1; i <= 100; i++) {
-  console.log(i);
-
+// stampare al posto dei numeri che sono sia multipli di 3 che di 5 la parola "FizzBuzz"
+  if ( (i % 3 == 0) && (i % 5 == 0) ) {
+    console.log("FizzBuzz");
+  }
 // stampare al posto dei multipli di 3 la parola "Fizz"
-if (i % 3 == 0) {
+  else if (i % 3 == 0) {
   console.log('Fizz');
-} else {
-  console.log(i);
 }
 // stampare al posto dei multipli di 5 la parola "Buzz"
-
-// stampare al posto dei numeri che sono sia multipli di 3 che di 5 la parola "FizzBuzz"
+ else if (i % 5 == 0) {
+  console.log('Buzz');
+}
+else {
+  console.log(i);
+}
 }
